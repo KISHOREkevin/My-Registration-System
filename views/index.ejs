@@ -1,0 +1,25 @@
+<%-include("header")%>
+
+<div class="container">
+	
+
+	<fieldset>
+		<legend>registration system</legend>
+		<form action="/" method="POST">
+			<label>name :</label>
+			<input type="text" name="regname" class="form-control" autocomplete="off" required autofocus><br>
+			<label>Phone Number :</label>
+			<input type="number" name="phno" class="form-control"  required><br>
+			<label>years of experience :</label>
+			<input type="number" name="years" class="form-control" required><br>
+			<button type="submit" class="btn btn-success">Add +</button>
+			<a href="/table" ><button type="button" class="btn btn-primary">Go to table</button></a>
+			<a href="/update"><button type="button" class="btn btn-primary">Update</button></a>
+			<a href="/delete"><button type="button" class="btn btn-primary">Delete</button></a>
+			
+
+		</form>
+		
+	</fieldset>
+</div>
+<%-include("footer")%>

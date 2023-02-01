@@ -1,0 +1,31 @@
+<%-include("header")%>
+<div class="container">
+	<table class="table">
+		<tr>
+			<th style="border:2px solid black; text-align: center;">S.no</th>
+			<th style="border:2px solid black; text-align: center;">Id.no</th>
+			<th style="border:2px solid black; text-align: center;">Name</th>
+			<th style="border:2px solid black; text-align: center;">Phone Number</th>
+			<th style="border:2px solid black; text-align: center;">Years of Experience</th>
+		</tr>
+		
+		
+		<% regname.forEach((element,index )=> { %>
+			<tr>
+				<td style="border:2px solid black; text-align: center;"><%=index+1%></td>
+				<td style="border:2px solid black; text-align: center;"><%=element._id%></td>
+				<td style="border:2px solid black; text-align: center;"><%=element.name%></td>
+				<td style="border:2px solid black; text-align: center;"><%=element.phno%></td>
+				<td style="border:2px solid black; text-align: center;"><%=element.yoe%></td>
+			<tr>
+		<%}); %> 
+			
+		
+		
+		
+	</table>
+	<a href="/"><button type="button" class="btn btn-primary">Go back</button></a>
+	<a href="/delete"><button type="button" class="btn btn-primary">Delete</button></a>
+	<a href="/update"><button type="button" class="btn btn-primary">Update</button></a>
+	</div>
+<%-include("footer")%>

@@ -1,0 +1,15 @@
+<%-include("header")%>
+<div class="container">
+	
+
+	<form action="/delete" method="POST">
+		<label>Enter the id number :</label><br>
+		<input type="text" name="deletename" class="form-control" autocomplete="off" required><br>
+		<button type="submit" class="btn btn-success">delete</button>
+		<a href="/table"><button type="button" class="btn btn-primary">Go to table</button></a>
+		<a href="/"><button type="button" class="btn btn-primary">Home</button></a>
+		<a href="/update"><button type="button" class="btn btn-primary">Update</button></a>
+	</form>
+	
+</div>
+<%-include("footer")%>
